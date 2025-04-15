@@ -1,4 +1,3 @@
-/* ESTILO BASE */
 body {
     background-color: #D5E1EF;
     display: flex;
@@ -13,9 +12,12 @@ body {
     display: grid;
     grid-template-columns: (2,1fr);
     background-color: #ffffff;
-    width: 20vw;
-    height: 70vh;
-    /* padding: 16px; */
+    width: auto;
+    min-width: 20%;
+    max-width: 50%;
+    height: auto;
+    min-height: 30%;
+    max-height: 80%;
     border-radius: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
     text-align: center;
@@ -23,29 +25,35 @@ body {
 
 .logo img {
 
-    width: 20vw;
+    width: auto;
+    min-width: 70%;
+    max-width: 100%;
+    height: auto;
+    min-height: 30%;
+    max-height: 50%;
     border-radius: 10px;
+    align-items: center;
+    margin-top: 6%;
 }
 
 h1 {
-    font-size: 1.2rem;
-    /* margin: 20px 0 10px; */
+    font-size: clamp(1em, 2.5vw, 2em); /* mínimo 1em, ideal 2.5% da largura da tela, máximo 2em */
     color: #1f3251;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 p {
-    font-size: 0.95rem;
+    font-size: clamp(0.8em, 2vw, 1.5em); /* mínimo 0.8em, ideal 2vw, máximo 1.5em */
     color: #7b879d;
-    /* padding: 0 10px 10px; */
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+
 @media (min-width: 100px) and (max-width: 200px) { 
-    .caixa {
+    /* .caixa {
         width: 55%;
         height: 18%;
-    }
+    } */
     .logo img{
         width: 80%;
         height: 35%;
@@ -62,10 +70,29 @@ p {
 }
 
 @media (min-width: 200px) and (max-width: 300px) {
-    .caixa {
+    /* .caixa {
         width: 70%;
         height: 30%;
+    } */
+    .logo img {
+        width: 78%;
+        height: 45%;
+        align-items: center;
+        margin-top: 5%;
     }
+    h1 {
+        font-size: 0.5em;
+    }
+    p {
+        font-size: 0.4em;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+    /* .caixa {
+        width: 60%;
+        height: 40%;
+    } */
     .logo img {
         width: 78%;
         height: 45%;
@@ -80,11 +107,11 @@ p {
     }
 }
 
-@media (min-width: 300px) and (max-width: 400px) {
-    .caixa {
-        width: 60%;
-        height: 40%;
-    }
+@media (min-width: 400px) and (max-width: 500px) {
+    /* .caixa {
+        width: 55%;
+        height: 45%;
+    } */
     .logo img {
         width: 78%;
         height: 45%;
@@ -95,34 +122,15 @@ p {
         font-size: 1em;
     }
     p {
-        font-size: 0.7em;
-    }
-}
-
-@media (min-width: 400px) and (max-width: 500px) {
-    .caixa {
-        width: 55%;
-        height: 45%;
-    }
-    .logo img {
-        width: 78%;
-        height: 45%;
-        align-items: center;
-        margin-top: 5%;
-    }
-    h1 {
-        font-size: 1.2em;
-    }
-    p {
-        font-size: 0.9em;
+        font-size: 0.5em;
     }
 }
 
 @media (min-width: 500px) and (max-width: 600px) {
-    .caixa {
+    /* .caixa {
         width: 45%;
         height: 45%;
-    }
+    } */
     .logo img {
         width: 78%;
         height: 45%;
@@ -138,10 +146,10 @@ p {
 }
 
 @media (min-width: 600px) and (max-width: 700px) {
-    .caixa {
+    /* .caixa {
         width: 35%;
         height: 45%;
-    }
+    } */
     .logo img {
         width: 78%;
         height: 45%;
@@ -157,10 +165,10 @@ p {
 }
 
 @media (min-width: 700px) and (max-width: 800px) {
-    .caixa {
+    /* .caixa {
         width: 30%;
         height: 45%;
-    }
+    } */
     .logo img {
         width: 78%;
         height: 45%;
@@ -176,10 +184,10 @@ p {
 }
 
 @media (min-width: 800px) and (max-width: 900px) {
-    .caixa {
+    /* .caixa {
         width: 20%;
         height: 35%;
-    }
+    } */
     .logo img {
         width: 78%;
         height: 45%;
@@ -195,10 +203,10 @@ p {
 }
 
 @media (min-width: 900px) and (max-width: 1000px) {
-    .caixa {
+    /* .caixa {
         width: 20%;
         height: 35%;
-    }
+    } */
     .logo img {
         width: 78%;
         height: 45%;
@@ -214,10 +222,10 @@ p {
 }
 
 @media (min-width: 1000px) and (max-width: 1100px) {
-    .caixa {
+    /* .caixa {
         width: 20%;
         height: 40%;
-    }
+    } */
     .logo img {
         width: 78%;
         height: 45%;
@@ -233,10 +241,10 @@ p {
 }
 
 @media (min-width: 1100px) and (max-width: 1200px) {
-    .caixa {
+    /* .caixa {
         width: 20%;
         height: 45%;
-    }
+    } */
     .logo img {
         width: 78%;
         height: 45%;
@@ -252,10 +260,10 @@ p {
 }
 
 @media (min-width: 1200px) and (max-width: 1300px) {
-    .caixa {
+    /* .caixa {
         width: 20%;
         height: 45%;
-    }
+    } */
     .logo img {
         width: 78%;
         height: 45%;
@@ -271,10 +279,10 @@ p {
 }
 
 @media (min-width: 1300px) and (max-width: 1400px) {
-    .caixa {
+    /* .caixa {
         width: 20%;
         height: 55%;
-    }
+    } */
     .logo img {
         width: 78%;
         height: 45%;
@@ -290,10 +298,10 @@ p {
 }
 
 @media (min-width: 1400px) and (max-width: 1500px) {
-    .caixa {
+    /* .caixa {
         width: 20%;
         height: 55%;
-    }
+    } */
     .logo img {
         width: 78%;
         height: 45%;
@@ -309,10 +317,10 @@ p {
 }
 
 @media (min-width: 1500px) and (max-width: 1600px) {
-    .caixa {
+    /* .caixa {
         width: 20%;
         height: 60%;
-    }
+    } */
     .logo img {
         width: 78%;
         height: 45%;
@@ -328,10 +336,10 @@ p {
 }
 
 @media (min-width: 1600px) and (max-width: 1700px) {
-    .caixa {
+    /* .caixa {
         width: 20%;
         height: 60%;
-    }
+    } */
     .logo img {
         width: 78%;
         height: 45%;
@@ -347,10 +355,10 @@ p {
 }
 
 @media (min-width: 1700px) and (max-width: 1800px) {
-    .caixa {
+    /* .caixa {
         width: 20%;
         height: 60%;
-    }
+    } */
     .logo img {
         width: 78%;
         height: 45%;
@@ -366,10 +374,10 @@ p {
 }
 
 @media (min-width: 1800px) and (max-width: 1900px) {
-    .caixa {
+    /* .caixa {
         width: 20%;
         height: 60%;
-    }
+    } */
     .logo img {
         width: 78%;
         height: 45%;
@@ -385,20 +393,19 @@ p {
 }
 
 @media (min-width: 1900px) and (max-width: 2000px) {
-    .caixa {
+    /* .caixa {
         width: 20%;
-        height: 60%;
-    }
+        height: 80%;
+    } */
     .logo img {
-        width: 78%;
+        width: 85%;
         height: 45%;
-        align-items: center;
         margin-top: 5%;
     }
     h1 {
-        font-size: 2em;
+        font-size: 1.8em;
     }
     p {
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 }
