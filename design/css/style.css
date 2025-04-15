@@ -41,53 +41,364 @@ p {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
 }
 
-/* RESPONSIVIDADE */
-
-@media (min-width: 100px) and (max-width: 200px) {
+@media (min-width: 100px) and (max-width: 200px) { 
     .caixa {
         width: 55%;
-        height: 30%;
+        height: 18%;
     }
     .logo img{
-        width: 75%;
+        width: 80%;
+        height: 35%;
         align-items: center;
         margin-top: 10%;
     }
     h1 {
-        font-size: 0.3em;
+        font-size: 0.5em;
     }
 
     p {
-        font-size: 0.2em;
+        font-size: 0.4em;
     }
 }
 
-/* @media (min-width: 360px) and (max-width: 479px) {
+@media (min-width: 200px) and (max-width: 300px) {
     .caixa {
-        width: 85vw;
+        width: 70%;
+        height: 30%;
+    }
+    .logo img {
+        width: 78%;
+        height: 45%;
+        align-items: center;
+        margin-top: 5%;
+    }
+    h1 {
+        font-size: 0.8em;
+    }
+    p {
+        font-size: 0.5em;
     }
 }
 
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 300px) and (max-width: 400px) {
     .caixa {
-        width: 75vw;
+        width: 60%;
+        height: 40%;
+    }
+    .logo img {
+        width: 78%;
+        height: 45%;
+        align-items: center;
+        margin-top: 5%;
+    }
+    h1 {
+        font-size: 1em;
+    }
+    p {
+        font-size: 0.7em;
     }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 400px) and (max-width: 500px) {
     .caixa {
-        width: 400px;
+        width: 55%;
+        height: 45%;
+    }
+    .logo img {
+        width: 78%;
+        height: 45%;
+        align-items: center;
+        margin-top: 5%;
+    }
+    h1 {
+        font-size: 1.2em;
+    }
+    p {
+        font-size: 0.9em;
     }
 }
 
-@media (min-width: 1024px) and (max-width: 1439px) {
+@media (min-width: 500px) and (max-width: 600px) {
     .caixa {
-        width: 360px;
+        width: 45%;
+        height: 45%;
+    }
+    .logo img {
+        width: 78%;
+        height: 45%;
+        align-items: center;
+        margin-top: 5%;
+    }
+    h1 {
+        font-size: 1.2em;
+    }
+    p {
+        font-size: 0.9em;
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 600px) and (max-width: 700px) {
     .caixa {
-        width: 340px;
+        width: 35%;
+        height: 45%;
     }
-} */
+    .logo img {
+        width: 78%;
+        height: 45%;
+        align-items: center;
+        margin-top: 5%;
+    }
+    h1 {
+        font-size: 1.2em;
+    }
+    p {
+        font-size: 0.9em;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 800px) {
+    .caixa {
+        width: 30%;
+        height: 45%;
+    }
+    .logo img {
+        width: 78%;
+        height: 45%;
+        align-items: center;
+        margin-top: 5%;
+    }
+    h1 {
+        font-size: 1.2em;
+    }
+    p {
+        font-size: 0.9em;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 900px) {
+    .caixa {
+        width: 20%;
+        height: 35%;
+    }
+    .logo img {
+        width: 78%;
+        height: 45%;
+        align-items: center;
+        margin-top: 5%;
+    }
+    h1 {
+        font-size: 0.9em;
+    }
+    p {
+        font-size: 0.7em;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1000px) {
+    .caixa {
+        width: 20%;
+        height: 35%;
+    }
+    .logo img {
+        width: 78%;
+        height: 45%;
+        align-items: center;
+        margin-top: 5%;
+    }
+    h1 {
+        font-size: 0.9em;
+    }
+    p {
+        font-size: 0.7em;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1100px) {
+    .caixa {
+        width: 20%;
+        height: 40%;
+    }
+    .logo img {
+        width: 78%;
+        height: 45%;
+        align-items: center;
+        margin-top: 5%;
+    }
+    h1 {
+        font-size: 1.1em;
+    }
+    p {
+        font-size: 0.8em;
+    }
+}
+
+@media (min-width: 1100px) and (max-width: 1200px) {
+    .caixa {
+        width: 20%;
+        height: 45%;
+    }
+    .logo img {
+        width: 78%;
+        height: 45%;
+        align-items: center;
+        margin-top: 5%;
+    }
+    h1 {
+        font-size: 1.2em;
+    }
+    p {
+        font-size: 0.9em;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+    .caixa {
+        width: 20%;
+        height: 45%;
+    }
+    .logo img {
+        width: 78%;
+        height: 45%;
+        align-items: center;
+        margin-top: 5%;
+    }
+    h1 {
+        font-size: 1.3em;
+    }
+    p {
+        font-size: 0.9em;
+    }
+}
+
+@media (min-width: 1300px) and (max-width: 1400px) {
+    .caixa {
+        width: 20%;
+        height: 55%;
+    }
+    .logo img {
+        width: 78%;
+        height: 45%;
+        align-items: center;
+        margin-top: 5%;
+    }
+    h1 {
+        font-size: 1.4em;
+    }
+    p {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 1400px) and (max-width: 1500px) {
+    .caixa {
+        width: 20%;
+        height: 55%;
+    }
+    .logo img {
+        width: 78%;
+        height: 45%;
+        align-items: center;
+        margin-top: 5%;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 1500px) and (max-width: 1600px) {
+    .caixa {
+        width: 20%;
+        height: 60%;
+    }
+    .logo img {
+        width: 78%;
+        height: 45%;
+        align-items: center;
+        margin-top: 5%;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    p {
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 1600px) and (max-width: 1700px) {
+    .caixa {
+        width: 20%;
+        height: 60%;
+    }
+    .logo img {
+        width: 78%;
+        height: 45%;
+        align-items: center;
+        margin-top: 5%;
+    }
+    h1 {
+        font-size: 1.7em;
+    }
+    p {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 1700px) and (max-width: 1800px) {
+    .caixa {
+        width: 20%;
+        height: 60%;
+    }
+    .logo img {
+        width: 78%;
+        height: 45%;
+        align-items: center;
+        margin-top: 5%;
+    }
+    h1 {
+        font-size: 1.7em;
+    }
+    p {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 1800px) and (max-width: 1900px) {
+    .caixa {
+        width: 20%;
+        height: 60%;
+    }
+    .logo img {
+        width: 78%;
+        height: 45%;
+        align-items: center;
+        margin-top: 5%;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1.3em;
+    }
+}
+
+@media (min-width: 1900px) and (max-width: 2000px) {
+    .caixa {
+        width: 20%;
+        height: 60%;
+    }
+    .logo img {
+        width: 78%;
+        height: 45%;
+        align-items: center;
+        margin-top: 5%;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    p {
+        font-size: 1.3em;
+    }
+}
